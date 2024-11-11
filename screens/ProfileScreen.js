@@ -4,7 +4,7 @@ import BottomNavBar from "../components/BottomNavBar";
 export default function ProfileScreen() {
     return (
         <SafeAreaView>
-            <Image id="picture" source="../assets/"/>
+            <Image id="picture" source={require("../assets/")}/>
             <Text id="name">Corey</Text>
             <Text id="email">alonzoc713@gmail.com</Text>
             <Button><Text>Favorites</Text></Button>
