@@ -18,7 +18,7 @@ export default function BottomNavBar() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "green",
+        backgroundColor: "#aae080",
         flex: 0.07,
         flexDirection: "row",
         padding: 0,

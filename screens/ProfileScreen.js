@@ -15,6 +15,7 @@ export default function ProfileScreen() {
                 <Text onPress={() => Linking.openURL('https://www.flaticon.com/free-icons/user')}>User icons created by Freepik - Flaticon</Text>
                 <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a>
                 <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Kiranshastry - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Dog icons created by Freepik - Flaticon</a>
             </View>
             <BottomNavBar/>
         </SafeAreaView>

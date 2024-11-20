@@ -1,49 +1,66 @@
 import { StyleSheet, Text, View, FlatList, SafeAreaView, Pressable, Image } from 'react-native';
 import { Button } from 'react-native-web';
 
-export default function AnimalListItem(imageSrc, name, ) {
+export default function AnimalListItem({name, breed, age}) {
     return (
-        <SafeAreaView style={styles.container}>
-            <Image id="smallAnimalIcon" source={require("../assets/icon.png")} style={styles.icon}/>
-            <View style={styles.textContainer}>
-                <Text>Fluffy</Text>
-                <Text>Shih-tzu</Text>
-                <Text>2 yr</Text>
+        <SafeAreaView style={styles.mainContainer}>
+            <View style={styles.iconContainer}>
+                <Image id="smallAnimalIcon" source={require("../assets/dog.png")} style={styles.icon}/>
             </View>
-            <Pressable onPress={() => console.log('Button pressed!')} style={styles.button}>
-                <Text>View</Text>
-            </Pressable>
+            <View style={styles.textContainer}>
+                <Text>{name}</Text>
+                <Text>{breed}</Text>
+                <Text>{age}</Text>
+            </View>
+            <View style={styles.buttonContainer}>
+                <Pressable onPress={() => console.log('Button pressed!')} style={styles.button}>
+                    <Text>View</Text>
+                </Pressable>
+            </View>
         </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: "beige",
-        flex: .1,
+    mainContainer: {
+        backgroundColor: "#f7e7d5",
+        flex: 1,
         flexDirection: "row",
-        justifyContent: "space-between",
-        padding: 0,
-        margin: 0,
-    },
-    button: {
-        height: "35%",
-        width: "30%",
         borderStyle: "solid",
-        borderColor: "black",
-        borderWidth: 1,
-        padding: 0,
-        margin: 0,
+        borderColor: "grey",
+        borderWidth: .5,
     },
-    textContainer: {
-        flexDirection: "column",
-        width: "30%",
+    iconContainer: {
+        flex: 1,
+        justifyContent: "center",
     },
     icon: {
-        height: "85%",
-        width: "30%",
-        padding: 0,
-        margin: 0,
+        height: "90%",
+        width: "60%",
         alignSelf: "center",
+        borderStyle: "solid",
+        borderColor: "grey",
+        borderWidth: 1,
+    },
+    textContainer: {
+        flex: 1,
+        height: "100%",
+        flexDirection: "column",
+        justifyContent: "center",
+    },
+    buttonContainer: {
+        flex: 1,
+        height: "100%",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    button: {
+        flex: .5,
+        flexDirection: "column",
+        justifyContent: "center",
+        backgroundColor: "#80d0e0",
+        borderStyle: "solid",
+        borderColor: "#67a8b5",
+        borderWidth: 1,
     },
 });
