@@ -1,11 +1,10 @@
-import { StyleSheet, Text, View, FlatList, SafeAreaView, Pressable, Image } from 'react-native';
-import { Button } from 'react-native-web';
+import { StyleSheet, Text, View, SafeAreaView, Pressable, Image } from 'react-native';
 
 export default function AnimalListItem({name, breed, age}) {
     return (
         <SafeAreaView style={styles.mainContainer}>
             <View style={styles.iconContainer}>
-                <Image id="smallAnimalIcon" source={require("../assets/dog.png")} style={styles.icon}/>
+                <Image id="smallAnimalIcon" source={require("../assets/dog.png")} style={styles.icon} resizeMode="contain"/>
             </View>
             <View style={styles.textContainer}>
                 <Text>{name}</Text>

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, FlatList, SafeAreaView } from 'react-native';
+import { StyleSheet, FlatList, SafeAreaView } from 'react-native';
 import BottomNavBar from "../components/BottomNavBar";
 import AnimalListItem from "../components/AnimalListItem";
 
@@ -11,6 +11,11 @@ export default function BrowseScreen() {
         {name:"Zoe", breed: "Dalmation", sex: "female", age: "7 months", bio:"Zoe loves playing with water."},
         {name:"Fred", breed: "Beagle", sex: "male", age: "1 year", bio:"Fred loves playing with water."},
         {name:"Mack", breed: "Irish Wolfhound", sex: "male", age: "2 years", bio:"Mack loves playing with water."},
+        {name:"Carl", breed: "Irish Wolfhound", sex: "male", age: "2 years", bio:"Mack loves playing with water."},
+        {name:"Harry", breed: "Irish Wolfhound", sex: "male", age: "2 years", bio:"Mack loves playing with water."},
+        {name:"Daisy", breed: "Irish Wolfhound", sex: "male", age: "2 years", bio:"Mack loves playing with water."},
+        {name:"Willow", breed: "Irish Wolfhound", sex: "male", age: "2 years", bio:"Mack loves playing with water."},
+        {name:"Andrea", breed: "Irish Wolfhound", sex: "male", age: "2 years", bio:"Mack loves playing with water."},
     ]
     return (
         <SafeAreaView style={styles.mainContainer}>
