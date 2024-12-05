@@ -10,7 +10,7 @@ export default function BottomNavBar() {
                 <Image source={require("../assets/redHeart.png")} style={styles.icons} resizeMode="contain"/>
             </Pressable>
             <Pressable onPress={() => console.log('Button pressed!')} style={styles.buttons}>
-                <Image source={require("../assets/user.png")} style={styles.icons} resizeMode="contain"/>
+                <Image source={require("../assets/member.png")} style={styles.icons} resizeMode="contain"/>
             </Pressable>
         </SafeAreaView>
     );
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
     },
     buttons: {
-        backgroundColor: "#aae080",
+        backgroundColor: "#f2eee9",
         flex: 1,
         justifyContent: "center",
         borderStyle: "solid",
