@@ -8,8 +8,9 @@ import ProfileScreen from './screens/ProfileScreen';
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <AnimalProfileScreen name="Fluffy" breed="Golden Retriever" sex="female" age="1 year" bio="Fluffy loves playing with water." shelter="Oswego Animal Shelter"/> */}
-      <ProfileScreen/>
+      <AnimalProfileScreen name="Fluffy" breed="Golden Retriever" sex="female" age="1 year" bio="Fluffy loves playing with water." shelter="Oswego Animal Shelter"/>
+      {/* <BrowseScreen/> */}
+      {/* <ProfileScreen/> */}
     </View>
   );
 }

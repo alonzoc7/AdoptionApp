@@ -32,17 +32,16 @@ export default function AnimalProfileScreen({name, breed, sex, age, bio, shelter
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
+        backgroundColor: "#a9d4ce",
     },
     infoContainer: {
         flex: 1,
     },
     top: {
         flex: .2,
+        backgroundColor: "#beebe5",
         flexDirection: "row",
         justifyContent: "space-between",
-        borderStyle: "solid",
-        borderColor: "grey",
-        borderWidth: .5,
     },
     topIcon: {
         flex: 1,
@@ -52,9 +51,7 @@ const styles = StyleSheet.create({
     middle: {
         flex: 1,
         flexDirection: "row",
-        borderStyle: "solid",
-        borderColor: "red",
-        borderWidth: .5,
+        backgroundColor: "#beebe5",
     },
     dogPicture: {
         flex: 1,
@@ -62,9 +59,6 @@ const styles = StyleSheet.create({
     },
     bottom: {
         flex: 2,
-        borderStyle: "solid",
-        borderColor: "blue",
-        borderWidth: .5,
     },
     name: {
         fontSize: 30,
